@@ -32,35 +32,31 @@ background:#111827;
 color:#f3f4f6;
 }
 
-.dark nav{
-background:#1f2937;
-}
-
 .dark .card{
 background:#1f2937;
-color:white;
 }
 
 /* HEADER */
 
 header{
-padding:70px 20px;
 text-align:center;
+padding:70px 20px;
 background:linear-gradient(135deg,#6366f1,#4f46e5);
 color:white;
 }
 
 header h1{
-font-size:36px;
+font-size:38px;
 margin-bottom:10px;
 }
 
 header p{
 max-width:700px;
 margin:auto;
+opacity:0.9;
 }
 
-/* NAVBAR */
+/* NAV */
 
 nav{
 display:flex;
@@ -73,20 +69,26 @@ position:sticky;
 top:0;
 }
 
+.dark nav{
+background:#1f2937;
+}
+
 nav a{
 cursor:pointer;
 font-weight:500;
 }
 
+/* DARK BUTTON */
+
 .toggle{
 position:absolute;
 right:20px;
-top:12px;
+top:15px;
+padding:8px 14px;
+border:none;
+border-radius:8px;
 background:#4f46e5;
 color:white;
-border:none;
-padding:8px 12px;
-border-radius:6px;
 cursor:pointer;
 }
 
@@ -98,7 +100,7 @@ margin:auto;
 padding:40px 20px;
 }
 
-/* SECTIONS */
+/* SECTION */
 
 .section{
 display:none;
@@ -112,9 +114,9 @@ display:block;
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-margin-top:20px;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+margin-top:25px;
 }
 
 /* CARD */
@@ -122,19 +124,19 @@ margin-top:20px;
 .card{
 background:white;
 padding:20px;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.1);
-text-align:center;
+border-radius:14px;
+box-shadow:0 6px 16px rgba(0,0,0,0.1);
 transition:0.3s;
+text-align:center;
 }
 
 .card:hover{
-transform:translateY(-4px);
+transform:translateY(-5px);
 }
 
 .card img{
 width:100%;
-height:130px;
+height:140px;
 object-fit:cover;
 border-radius:10px;
 margin-bottom:10px;
@@ -144,61 +146,20 @@ margin-bottom:10px;
 
 button{
 margin-top:15px;
-padding:10px 18px;
+padding:10px 20px;
 border:none;
+border-radius:8px;
 background:#4f46e5;
 color:white;
-border-radius:6px;
 cursor:pointer;
 }
-
-/* QUIZ */
-
-.quiz-question{
-margin-top:20px;
-font-weight:600;
-}
-
-.option{
-display:block;
-margin:6px 0;
-}
-
-/* PROGRESS BAR */
-
-.progress{
-width:100%;
-background:#ddd;
-height:15px;
-border-radius:10px;
-margin-top:20px;
-}
-
-.progress-bar{
-height:15px;
-width:0%;
-background:#4f46e5;
-border-radius:10px;
-}
-
-/* CERTIFICATE */
-
-.certificate{
-margin-top:20px;
-padding:20px;
-border:2px dashed #4f46e5;
-text-align:center;
-display:none;
-}
-
-/* FOOTER */
 
 footer{
 margin-top:60px;
 text-align:center;
+padding:20px;
 background:#111827;
 color:#d1d5db;
-padding:20px;
 }
 
 </style>
@@ -211,9 +172,9 @@ padding:20px;
 <h1>🎓 Student Problem Solving & Critical Thinking Hub</h1>
 
 <p>
-A platform that helps students build strong thinking abilities,
-improve decision making, and develop problem solving skills
-for academic success and real-world challenges.
+A platform designed to help students develop logical thinking,
+problem solving abilities, and decision making skills for
+academic success and real life challenges.
 </p>
 
 </header>
@@ -225,9 +186,8 @@ for academic success and real-world challenges.
 <a onclick="openPage('skills')">🧠 Skills</a>
 <a onclick="openPage('activities')">🎯 Activities</a>
 <a onclick="openPage('tips')">💡 Tips</a>
-<a onclick="openPage('quiz')">📝 Quiz</a>
 
-<button class="toggle" onclick="toggleDark()">🌙</button>
+<button class="toggle" onclick="toggleDark()">🌙 Dark</button>
 
 </nav>
 
@@ -262,12 +222,12 @@ for academic success and real-world challenges.
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0">
 <p>💡 Encourage creativity</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
 <p>📊 Learn better decision making</p>
 </div>
 
@@ -288,19 +248,40 @@ for academic success and real-world challenges.
 
 <div class="grid">
 
-<div class="card"><p><b>Understanding Problems</b></p><p>Students learn to clearly identify and understand problems before solving them.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+<p>🔍 Understanding problems clearly</p>
+</div>
 
-<div class="card"><p><b>Breaking Complex Tasks</b></p><p>Large problems become easier when divided into smaller manageable steps.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<p>🧩 Breaking complex tasks into steps</p>
+</div>
 
-<div class="card"><p><b>Encouraging Curiosity</b></p><p>Curiosity helps students explore ideas and ask meaningful questions.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+<p>💡 Encouraging curiosity</p>
+</div>
 
-<div class="card"><p><b>Improving Learning</b></p><p>Critical thinking improves understanding of subjects instead of memorizing.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2">
+<p>📚 Enhancing learning ability</p>
+</div>
 
-<div class="card"><p><b>Collaboration</b></p><p>Working with others builds teamwork and communication abilities.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+<p>🤝 Improving collaboration</p>
+</div>
 
-<div class="card"><p><b>Building Confidence</b></p><p>Solving problems successfully increases confidence in students.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+<p>⚡ Building confidence</p>
+</div>
 
-<div class="card"><p><b>Real-World Preparation</b></p><p>Thinking skills prepare students for real life situations and decisions.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
+<p>🌍 Preparing for real world</p>
+</div>
 
 </div>
 
@@ -314,19 +295,40 @@ for academic success and real-world challenges.
 
 <div class="grid">
 
-<div class="card"><p><b>Logical Reasoning</b></p><p>Understanding relationships between ideas to reach logical conclusions.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+<p>Logical reasoning</p>
+</div>
 
-<div class="card"><p><b>Analytical Thinking</b></p><p>Analyzing information carefully to identify patterns and solutions.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+<p>Analytical thinking</p>
+</div>
 
-<div class="card"><p><b>Creative Thinking</b></p><p>Developing innovative ideas and unique approaches to problems.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+<p>Creative thinking</p>
+</div>
 
-<div class="card"><p><b>Decision Making</b></p><p>Evaluating different choices and selecting the best option.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+<p>Decision making</p>
+</div>
 
-<div class="card"><p><b>Curiosity</b></p><p>Exploring new knowledge and asking questions to understand better.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f">
+<p>Curiosity & questioning</p>
+</div>
 
-<div class="card"><p><b>Information Evaluation</b></p><p>Judging whether information is accurate and reliable.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0">
+<p>Evaluation of information</p>
+</div>
 
-<div class="card"><p><b>Reflection</b></p><p>Learning from past experiences to improve future decisions.</p></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d">
+<p>Reflection & learning</p>
+</div>
 
 </div>
 
@@ -340,25 +342,19 @@ for academic success and real-world challenges.
 
 <div class="grid">
 
-<div class="card"><p><b>Puzzles</b></p><p>Solving puzzles improves logical thinking and pattern recognition.</p></div>
-
-<div class="card"><p><b>Chess</b></p><p>Chess develops planning, strategy, and decision making.</p></div>
-
-<div class="card"><p><b>Debates</b></p><p>Debates encourage students to analyze arguments and express ideas.</p></div>
-
-<div class="card"><p><b>Science Experiments</b></p><p>Experiments help students learn through observation and testing.</p></div>
-
-<div class="card"><p><b>Brainstorming</b></p><p>Brainstorming allows students to create many ideas for solving problems.</p></div>
-
-<div class="card"><p><b>Group Problem Solving</b></p><p>Working together improves collaboration and critical thinking.</p></div>
-
-<div class="card"><p><b>Logic Games</b></p><p>Games like Sudoku train the brain to think strategically.</p></div>
+<div class="card"><p>🧩 Solve puzzles</p></div>
+<div class="card"><p>♟ Play chess</p></div>
+<div class="card"><p>🗣 Debate ideas</p></div>
+<div class="card"><p>🔬 Science experiments</p></div>
+<div class="card"><p>📚 Read challenging books</p></div>
+<div class="card"><p>👥 Group problem solving</p></div>
+<div class="card"><p>💡 Brainstorm ideas</p></div>
 
 </div>
 
-<h3 style="margin-top:20px;">🧩 Thinking Challenge</h3>
+<h3 style="margin-top:30px;">🧩 Thinking Challenge</h3>
 
-<p id="challenge">Click below to generate a challenge</p>
+<p id="challenge">Click below to generate a challenge.</p>
 
 <button onclick="newChallenge()">Generate Challenge</button>
 
@@ -372,113 +368,55 @@ for academic success and real-world challenges.
 
 <div class="grid">
 
-<div class="card"><p><b>Ask Questions</b></p><p>Always ask why and how to deepen your understanding.</p></div>
-
-<div class="card"><p><b>Break Problems</b></p><p>Divide complex problems into smaller steps.</p></div>
-
-<div class="card"><p><b>Multiple Perspectives</b></p><p>Look at problems from different viewpoints.</p></div>
-
-<div class="card"><p><b>Read Regularly</b></p><p>Reading develops knowledge and analytical thinking.</p></div>
-
-<div class="card"><p><b>Learn from Mistakes</b></p><p>Mistakes provide valuable learning experiences.</p></div>
-
-<div class="card"><p><b>Discuss Ideas</b></p><p>Talking with others helps discover better solutions.</p></div>
-
-<div class="card"><p><b>Practice Daily</b></p><p>Daily practice strengthens problem solving abilities.</p></div>
+<div class="card"><p>❓ Ask questions</p></div>
+<div class="card"><p>🧠 Break big problems</p></div>
+<div class="card"><p>🔄 Think from many perspectives</p></div>
+<div class="card"><p>📖 Learn from books</p></div>
+<div class="card"><p>⚠ Learn from mistakes</p></div>
+<div class="card"><p>🗣 Discuss with others</p></div>
+<div class="card"><p>📅 Practice daily thinking</p></div>
 
 </div>
 
-<button onclick="motivate()">Get Motivation</button>
+<button onclick="motivate()">✨ Get Motivation</button>
 
 <p id="msg"></p>
-
-</section>
-
-<!-- QUIZ -->
-
-<section id="quiz" class="section">
-
-<h2>📝 Critical Thinking Quiz</h2>
-
-<div class="quiz-question">
-Which activity improves logical thinking?
-</div>
-
-<label class="option"><input type="radio" name="q1" value="0"> Watching TV</label>
-<label class="option"><input type="radio" name="q1" value="1"> Solving puzzles</label>
-<label class="option"><input type="radio" name="q1" value="0"> Sleeping</label>
-
-<button onclick="checkQuiz()">Submit</button>
-
-<p id="score"></p>
-
-<div class="progress">
-<div class="progress-bar" id="bar"></div>
-</div>
-
-<div class="certificate" id="cert">
-
-<h3>🏆 Certificate of Completion</h3>
-<p>You successfully completed the Critical Thinking Quiz!</p>
-
-</div>
 
 </section>
 
 </div>
 
 <footer>
-Educational Prototype Project • Thinking Skills Platform
+<p>Educational Prototype Project • Critical Thinking Skills</p>
 </footer>
 
 <script>
 
 function openPage(page){
-document.querySelectorAll(".section").forEach(function(s){
-s.classList.remove("active");
-});
-document.getElementById(page).classList.add("active");
+document.querySelectorAll(".section").forEach(s=>s.classList.remove("active"))
+document.getElementById(page).classList.add("active")
 }
 
 function toggleDark(){
-document.body.classList.toggle("dark");
+document.body.classList.toggle("dark")
 }
 
 const challenges=[
 "Think of 5 uses for a plastic bottle",
-"How could you reduce traffic in a city?",
+"How would you solve traffic problems?",
 "Why do plants grow toward sunlight?",
 "How could schools improve learning?",
 "What invention would make life easier?"
-];
+]
 
 function newChallenge(){
-let random=Math.floor(Math.random()*challenges.length);
-document.getElementById("challenge").innerText=challenges[random];
+let random=Math.floor(Math.random()*challenges.length)
+document.getElementById("challenge").innerText=challenges[random]
 }
 
 function motivate(){
 document.getElementById("msg").innerText=
-"Great thinkers solve problems step by step and learn from every challenge.";
-}
-
-function checkQuiz(){
-
-let score=0;
-
-document.querySelectorAll("input[name='q1']:checked").forEach(function(ans){
-score+=parseInt(ans.value);
-});
-
-document.getElementById("score").innerText="Score: "+score+"/1";
-
-let percent=score*100;
-document.getElementById("bar").style.width=percent+"%";
-
-if(score===1){
-document.getElementById("cert").style.display="block";
-}
-
+"Great thinkers do not avoid problems — they solve them step by step."
 }
 
 </script>
