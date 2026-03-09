@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Students Problem Solving & Critical Thinking Hub</title>
+<title>Student Problem Solving & Critical Thinking Hub</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -40,6 +40,8 @@ margin-bottom:10px;
 header p{
 font-size:18px;
 opacity:0.9;
+max-width:700px;
+margin:auto;
 }
 
 /* NAV */
@@ -99,24 +101,35 @@ transform:translateY(-6px);
 box-shadow:0 12px 25px rgba(0,0,0,0.12);
 }
 
-.card h3{
-margin-bottom:10px;
-}
-
 /* SECTION */
 
 .section{
 display:none;
+animation:fade .4s ease;
 }
 
 .section.active{
 display:block;
 }
 
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+
+ul{
+padding-left:20px;
+margin-top:15px;
+}
+
+li{
+margin:10px 0;
+}
+
 /* BUTTON */
 
 button{
-margin-top:15px;
+margin-top:20px;
 padding:12px 22px;
 background:#4f46e5;
 color:white;
@@ -128,17 +141,6 @@ font-size:15px;
 
 button:hover{
 background:#4338ca;
-}
-
-/* LIST */
-
-ul{
-margin-top:10px;
-padding-left:20px;
-}
-
-li{
-margin:8px 0;
 }
 
 /* FOOTER */
@@ -159,21 +161,32 @@ border-radius:12px;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>Students Problem Solving & Critical Thinking Hub</h1>
-<p>Interactive learning platform for students</p>
+
+<h1>🎓 Student Problem Solving & Critical Thinking Hub</h1>
+
+<p>
+A learning platform designed to help students strengthen their ability 
+to analyze problems, evaluate ideas, and develop logical solutions.
+These skills are essential for academic success, career growth,
+and making smart decisions in everyday life.
+</p>
+
 </header>
 
 <nav>
-<a onclick="openPage('home')">Home</a>
-<a onclick="openPage('about')">About</a>
-<a onclick="openPage('skills')">Skills</a>
-<a onclick="openPage('activities')">Activities</a>
-<a onclick="openPage('tips')">Tips</a>
+
+<a onclick="openPage('home')">🏠 Home</a>
+<a onclick="openPage('about')">📘 About</a>
+<a onclick="openPage('skills')">🧠 Skills</a>
+<a onclick="openPage('activities')">🎯 Activities</a>
+<a onclick="openPage('tips')">💡 Tips</a>
+
 </nav>
 
 <div class="container">
@@ -182,30 +195,30 @@ border-radius:12px;
 
 <section id="home" class="section active">
 
-<h2>Welcome Students 👋</h2>
+<h2>🌟 Welcome to the Thinking Hub</h2>
 
 <p>
-This mini learning platform helps students improve their 
-<strong>problem solving and critical thinking abilities</strong>.
-These skills help students analyze situations, make better decisions,
-and find creative solutions in school and real life.
+This website helps students develop strong thinking abilities.
+Problem solving and critical thinking help students analyze information,
+solve complex challenges, and make better decisions in both education
+and real-life situations.
 </p>
 
 <div class="grid">
 
 <div class="card">
-<h3>🧠 Think Better</h3>
-<p>Learn how to analyze problems step-by-step.</p>
+<h3>🧠 Build Strong Thinking</h3>
+<p>Learn how to break down difficult problems and analyze them step by step.</p>
 </div>
 
 <div class="card">
-<h3>🎯 Practice Skills</h3>
-<p>Try activities designed to sharpen your mind.</p>
+<h3>📊 Improve Decision Making</h3>
+<p>Understand different perspectives before choosing the best solution.</p>
 </div>
 
 <div class="card">
-<h3>🚀 Improve Learning</h3>
-<p>Develop skills useful for school, careers and life.</p>
+<h3>🚀 Prepare for the Future</h3>
+<p>Critical thinking is one of the most important skills for modern careers.</p>
 </div>
 
 </div>
@@ -216,25 +229,23 @@ and find creative solutions in school and real life.
 
 <section id="about" class="section">
 
-<h2>Why Critical Thinking Matters</h2>
+<h2>📘 About Problem Solving & Critical Thinking</h2>
 
 <p>
-Critical thinking allows students to evaluate information logically
-instead of memorizing facts without understanding.
-Problem solving helps students break complex problems into smaller
-manageable steps.
+Critical thinking and problem solving are essential skills that help students
+understand situations, evaluate information, and develop effective solutions.
 </p>
 
-<br>
-
-<h3>Benefits for Students</h3>
-
 <ul>
-<li>Improves academic performance</li>
-<li>Builds confidence in solving challenges</li>
-<li>Encourages creativity and curiosity</li>
-<li>Helps students make better decisions</li>
-<li>Prepares students for real-world problems</li>
+
+<li>🔍 Helps students analyze problems clearly.</li>
+<li>🧩 Encourages logical and structured thinking.</li>
+<li>💡 Develops creativity in finding unique solutions.</li>
+<li>📚 Improves understanding of academic subjects.</li>
+<li>🤝 Supports collaboration and teamwork.</li>
+<li>⚡ Builds confidence when facing challenges.</li>
+<li>🌍 Prepares students for real-world situations.</li>
+
 </ul>
 
 </section>
@@ -243,41 +254,19 @@ manageable steps.
 
 <section id="skills" class="section">
 
-<h2>Important Thinking Skills</h2>
+<h2>🧠 Essential Thinking Skills</h2>
 
-<div class="grid">
+<ul>
 
-<div class="card">
-<h3>Logical Thinking</h3>
-<p>
-Understanding cause and effect relationships
-and solving problems step-by-step.
-</p>
-</div>
+<li>🧩 Logical Reasoning – understanding relationships between ideas.</li>
+<li>🔎 Analytical Thinking – examining information carefully.</li>
+<li>💡 Creative Thinking – generating new and innovative ideas.</li>
+<li>⚖ Decision Making – selecting the best solution from options.</li>
+<li>❓ Curiosity – asking questions to gain deeper understanding.</li>
+<li>📊 Evaluation – judging information based on evidence.</li>
+<li>🧠 Reflection – learning from mistakes and experiences.</li>
 
-<div class="card">
-<h3>Analytical Thinking</h3>
-<p>
-Breaking complex problems into smaller parts
-to understand them better.
-</p>
-</div>
-
-<div class="card">
-<h3>Creative Thinking</h3>
-<p>
-Generating new ideas and alternative solutions.
-</p>
-</div>
-
-<div class="card">
-<h3>Decision Making</h3>
-<p>
-Choosing the best solution after evaluating options.
-</p>
-</div>
-
-</div>
+</ul>
 
 </section>
 
@@ -285,43 +274,29 @@ Choosing the best solution after evaluating options.
 
 <section id="activities" class="section">
 
-<h2>Activities to Improve Thinking</h2>
+<h2>🎯 Activities to Improve Thinking Skills</h2>
 
 <ul>
 
-<li>
-<b>Puzzles & Riddles</b> – Train the brain to identify patterns
-and solve tricky problems.
-</li>
-
-<li>
-<b>Debates</b> – Help students evaluate different viewpoints.
-</li>
-
-<li>
-<b>Group Discussions</b> – Improve communication and reasoning.
-</li>
-
-<li>
-<b>Science Experiments</b> – Encourage curiosity and investigation.
-</li>
-
-<li>
-<b>Strategy Games</b> – Chess, Sudoku, and logic games improve
-planning skills.
-</li>
+<li>🧩 Solve puzzles and riddles to strengthen logical thinking.</li>
+<li>♟ Play strategy games like chess or Sudoku.</li>
+<li>🗣 Participate in debates and discussions.</li>
+<li>🔬 Perform simple science experiments.</li>
+<li>📚 Read books that challenge your thinking.</li>
+<li>🧠 Practice brainstorming creative solutions.</li>
+<li>👥 Work in teams to solve real-life problems.</li>
 
 </ul>
 
 <div class="challenge">
 
-<h3>Daily Challenge 🧩</h3>
+<h3>🧩 Daily Thinking Challenge</h3>
 
 <p id="challenge">
-Click the button to get a thinking challenge!
+Press the button to generate a thinking challenge.
 </p>
 
-<button onclick="newChallenge()">New Challenge</button>
+<button onclick="newChallenge()">Generate Challenge</button>
 
 </div>
 
@@ -331,25 +306,21 @@ Click the button to get a thinking challenge!
 
 <section id="tips" class="section">
 
-<h2>Tips to Become a Better Thinker</h2>
+<h2>💡 Tips to Become a Better Thinker</h2>
 
 <ul>
 
-<li>Always ask <b>why</b> and <b>how</b>.</li>
-
-<li>Break big problems into small steps.</li>
-
-<li>Look at problems from different perspectives.</li>
-
-<li>Learn from mistakes instead of avoiding them.</li>
-
-<li>Practice solving problems daily.</li>
+<li>❓ Always ask "Why?" and "How?".</li>
+<li>🧠 Break large problems into smaller steps.</li>
+<li>🔄 Look at problems from multiple perspectives.</li>
+<li>📖 Learn continuously from books and experiences.</li>
+<li>⚠ Learn from mistakes instead of fearing them.</li>
+<li>🗣 Discuss ideas with others to gain new viewpoints.</li>
+<li>📅 Practice thinking challenges every day.</li>
 
 </ul>
 
-<br>
-
-<button onclick="motivate()">Get Motivation</button>
+<button onclick="motivate()">✨ Get Motivation</button>
 
 <p id="msg"></p>
 
@@ -358,7 +329,9 @@ Click the button to get a thinking challenge!
 </div>
 
 <footer>
-<p>Educational Prototype • Critical Thinking for Students</p>
+
+<p>📘 Educational Prototype Project | Student Thinking Skills Platform</p>
+
 </footer>
 
 <script>
@@ -366,32 +339,33 @@ Click the button to get a thinking challenge!
 function openPage(page){
 
 document.querySelectorAll(".section").forEach(section=>{
-section.classList.remove("active")
-})
+section.classList.remove("active");
+});
 
-document.getElementById(page).classList.add("active")
+document.getElementById(page).classList.add("active");
 
 }
 
 function motivate(){
 
-document.getElementById("msg").innerText =
-"Great thinkers are not born — they practice thinking every day."
+document.getElementById("msg").innerText=
+"Great thinkers don't avoid problems — they solve them step by step.";
 
 }
 
 const challenges=[
-"Find 3 different ways to solve 12 + 15.",
-"Why do plants need sunlight?",
-"How can you measure time without a clock?",
-"If you lost electricity for a day, what would you do?"
-]
+"🧠 Think of 3 different uses for a paperclip.",
+"🧩 How would you measure time without a clock?",
+"🔎 Why do plants grow toward sunlight?",
+"⚙ How could you solve traffic problems in a city?",
+"💡 How would you improve your school system?"
+];
 
 function newChallenge(){
 
-let random=Math.floor(Math.random()*challenges.length)
+let random=Math.floor(Math.random()*challenges.length);
 
-document.getElementById("challenge").innerText=challenges[random]
+document.getElementById("challenge").innerText=challenges[random];
 
 }
 
@@ -400,4 +374,3 @@ document.getElementById("challenge").innerText=challenges[random]
 </body>
 
 </html>
-
