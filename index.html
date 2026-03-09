@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Helping Students Develop Problem Solving & Critical Thinking</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#eef2ff,#f8fafc);
+color:#1f2937;
+}
+
+/* HEADER */
+
+header{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(135deg,#6366f1,#4f46e5);
+color:white;
+}
+
+header h1{
+font-size:38px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+opacity:0.9;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+background:white;
+padding:15px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+position:sticky;
+top:0;
+z-index:10;
+}
+
+nav a{
+text-decoration:none;
+font-weight:500;
+color:#374151;
+cursor:pointer;
+}
+
+nav a:hover{
+color:#4f46e5;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 25px rgba(0,0,0,0.12);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+/* SECTION */
+
+.section{
+display:none;
+}
+
+.section.active{
+display:block;
+}
+
+/* BUTTON */
+
+button{
+margin-top:15px;
+padding:12px 22px;
+background:#4f46e5;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+}
+
+button:hover{
+background:#4338ca;
+}
+
+/* LIST */
+
+ul{
+margin-top:10px;
+padding-left:20px;
+}
+
+li{
+margin:8px 0;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:60px;
+background:#111827;
+color:#d1d5db;
+text-align:center;
+padding:25px;
+}
+
+.challenge{
+margin-top:25px;
+padding:20px;
+background:#eef2ff;
+border-radius:12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Helping Students Develop Problem Solving & Critical Thinking Skills</h1>
+<p>Interactive learning platform for students</p>
+</header>
+
+<nav>
+<a onclick="openPage('home')">Home</a>
+<a onclick="openPage('about')">About</a>
+<a onclick="openPage('skills')">Skills</a>
+<a onclick="openPage('activities')">Activities</a>
+<a onclick="openPage('tips')">Tips</a>
+</nav>
+
+<div class="container">
+
+<!-- HOME -->
+
+<section id="home" class="section active">
+
+<h2>Welcome Students 👋</h2>
+
+<p>
+This mini learning platform helps students improve their 
+<strong>problem solving and critical thinking abilities</strong>.
+These skills help students analyze situations, make better decisions,
+and find creative solutions in school and real life.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>🧠 Think Better</h3>
+<p>Learn how to analyze problems step-by-step.</p>
+</div>
+
+<div class="card">
+<h3>🎯 Practice Skills</h3>
+<p>Try activities designed to sharpen your mind.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Improve Learning</h3>
+<p>Develop skills useful for school, careers and life.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+<h2>Why Critical Thinking Matters</h2>
+
+<p>
+Critical thinking allows students to evaluate information logically
+instead of memorizing facts without understanding.
+Problem solving helps students break complex problems into smaller
+manageable steps.
+</p>
+
+<br>
+
+<h3>Benefits for Students</h3>
+
+<ul>
+<li>Improves academic performance</li>
+<li>Builds confidence in solving challenges</li>
+<li>Encourages creativity and curiosity</li>
+<li>Helps students make better decisions</li>
+<li>Prepares students for real-world problems</li>
+</ul>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+
+<h2>Important Thinking Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Logical Thinking</h3>
+<p>
+Understanding cause and effect relationships
+and solving problems step-by-step.
+</p>
+</div>
+
+<div class="card">
+<h3>Analytical Thinking</h3>
+<p>
+Breaking complex problems into smaller parts
+to understand them better.
+</p>
+</div>
+
+<div class="card">
+<h3>Creative Thinking</h3>
+<p>
+Generating new ideas and alternative solutions.
+</p>
+</div>
+
+<div class="card">
+<h3>Decision Making</h3>
+<p>
+Choosing the best solution after evaluating options.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ACTIVITIES -->
+
+<section id="activities" class="section">
+
+<h2>Activities to Improve Thinking</h2>
+
+<ul>
+
+<li>
+<b>Puzzles & Riddles</b> – Train the brain to identify patterns
+and solve tricky problems.
+</li>
+
+<li>
+<b>Debates</b> – Help students evaluate different viewpoints.
+</li>
+
+<li>
+<b>Group Discussions</b> – Improve communication and reasoning.
+</li>
+
+<li>
+<b>Science Experiments</b> – Encourage curiosity and investigation.
+</li>
+
+<li>
+<b>Strategy Games</b> – Chess, Sudoku, and logic games improve
+planning skills.
+</li>
+
+</ul>
+
+<div class="challenge">
+
+<h3>Daily Challenge 🧩</h3>
+
+<p id="challenge">
+Click the button to get a thinking challenge!
+</p>
+
+<button onclick="newChallenge()">New Challenge</button>
+
+</div>
+
+</section>
+
+<!-- TIPS -->
+
+<section id="tips" class="section">
+
+<h2>Tips to Become a Better Thinker</h2>
+
+<ul>
+
+<li>Always ask <b>why</b> and <b>how</b>.</li>
+
+<li>Break big problems into small steps.</li>
+
+<li>Look at problems from different perspectives.</li>
+
+<li>Learn from mistakes instead of avoiding them.</li>
+
+<li>Practice solving problems daily.</li>
+
+</ul>
+
+<br>
+
+<button onclick="motivate()">Get Motivation</button>
+
+<p id="msg"></p>
+
+</section>
+
+</div>
+
+<footer>
+<p>Educational Prototype • Critical Thinking for Students</p>
+</footer>
+
+<script>
+
+function openPage(page){
+
+document.querySelectorAll(".section").forEach(section=>{
+section.classList.remove("active")
+})
+
+document.getElementById(page).classList.add("active")
+
+}
+
+function motivate(){
+
+document.getElementById("msg").innerText =
+"Great thinkers are not born — they practice thinking every day."
+
+}
+
+const challenges=[
+"Find 3 different ways to solve 12 + 15.",
+"Why do plants need sunlight?",
+"How can you measure time without a clock?",
+"If you lost electricity for a day, what would you do?"
+]
+
+function newChallenge(){
+
+let random=Math.floor(Math.random()*challenges.length)
+
+document.getElementById("challenge").innerText=challenges[random]
+
+}
+
+</script>
+
+</body>
+</html>
